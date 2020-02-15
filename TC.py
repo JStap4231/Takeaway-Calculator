@@ -1,8 +1,8 @@
 
 class Person():
     def __init__(self):
-        self.name = str(input("Enter a name: "))
-        self.total = int(input("Enter their total: "))
+        self.name = str(input("\nEnter a name: "))
+        self.total = float(input("Enter their total: "))
         self.share = 0
         self.amount_owed = 0
 
@@ -39,7 +39,7 @@ def main():
 
     takeawayTotal = getTotal(plist)
     getShares(plist, takeawayTotal)
-    takeawayCost = int(input("Enter the final amount paid: "))
+    takeawayCost = float(input("Enter the final amount paid: "))
 
     discount = getDiscount()
 
